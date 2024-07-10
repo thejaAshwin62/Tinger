@@ -1,6 +1,6 @@
 <div align="center">
   <br />
- <a href="https://ibb.co/2n94dDZ"><img src="https://i.ibb.co/2n94dDZ/Capture2.png" alt="Capture2" border="0"></a>
+<a href="https://ibb.co/2n94dDZ"><img src="https://i.ibb.co/WxhJfbV/Capture2.png" alt="Capture2" border="0"></a>
   <br />
 
   <div>
