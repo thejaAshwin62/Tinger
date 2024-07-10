@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
+*/
+.main {
+  background-image: url(/src/assets/back.png);
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+}
+
+
+.main:before {
+  background: radial-gradient(circle, rgba(184, 179, 225, 0) 0, #000000 3000%);
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.main:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  filter: invert(1);
+}
+
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 640px;
+  background-image: radial-gradient(
+      at 27% 37%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
+}
+
+.form2:hover span{
+  transition: 1s;
+  color: red;
+  text-shadow: 0 0 10px  red,
+               0 0 20px  red,
+               0 0 120px red,
+               0 0 160px red;
+
+}
+
+.logo{
+  
+}
+.git{
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-top: 30px;
+
+}
+.insta{
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.text1{
+  @apply   blue_gradient;
+}
+.but{
+  @apply font-black bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-100 bg-clip-text text-transparent;
+  font-size: 1.37em;  
+  padding-left: 11rem;
+  
+
+
+}
+.but2{
+  padding-left: 1rem;
+  @apply font-black bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-100 bg-clip-text text-transparent;
+font-size: 1.4em;  
+
+}
+.but3{
+  padding-left: 12rem;
+  @apply font-black bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-100 bg-clip-text text-transparent;
+font-size: 1.4em;  
+
+}
+.dbut{
+  padding-top: 10rem;
+}
+@media screen and (max-width: 700px) {
+  .main {
+    padding: 0px;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-position: -360px  45px;
+  }
+.logo{
+  @apply w-36;
+}
+  .int{
+    width: 65vw;
+  }
+  .int2{
+    width: 65vw;
+    line-height: rem;
+  }
+  .form{
+    width: 65vw;
+    font-size: 0.1rem;
+    line-height: 0.5;
+    padding-left: 94.5px;
+  }
+  .form2{
+    width: 65vw;
+  
+    font-size: 0.1rem;
+    line-height: 0.5;
+    
+  }
+  .intm{
+    padding-left: 30px;
+    align-items: center;
+  }
+.frm{
+
+   align-items: center;
+    padding-left: 20px;
+}
+
+  .socm{
+    align-items: center;
+    padding-left: 25px;
+  }
+.but2{
+  padding-left: 12rem;
+  align-items: center;
+}
+.but3{
+  padding-left: 11.5rem;
+  padding-top: 1rem;
+  align-items: center;
+}
+
+
+
+}
+
+.intm{
+padding-left: 40px;
+align-items: center;
+}
+.int{
+  
+  @apply mt-28 text-5xl font-extrabold leading-[1.15] blue_gradient sm:text-4xl text-start;
+  width: 75vw;
+
+}
+.int2{
+  @apply mt-9 text-sm text-white sm:text-xl text-start;
+  width: 75vw;
+
+}
+
+.form{
+  @apply mt-28 text-5xl font-extrabold leading-[1.15]  bg-gradient-to-r
+   from-blue-900 via-blue-600 to-cyan-500 bg-clip-text text-transparent text-center;
+   font-size: 2.25rem;
+   line-height: 2.25rem;
+   
+ 
+
+}
+.form2{
+  @apply mt-2 text-5xl font-extrabold leading-[1.15] 
+  bg-gradient-to-r from-amber-600 via-orange-500 to-yellow-100 bg-clip-text text-transparent
+   text-center;
+     width: 75vw;
+     font-size: 2rem;
+     line-height: 2rem;
+     padding-left: 30px;
+}
+.socm{
+  align-items: center;
+}
+
+.social{
+  @apply mt-2  text-violet-900 sm:text-5xl text-center;
+ 
+
+}
+.social2{
+  @apply mt-2  text-red-600 sm:text-5xl  text-center;
+ 
+ 
+}
+
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+.app2 {
+  @apply relative z-10 flex justify-center items-start flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+
+.black_btn {
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl text-center;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-100 via-orange-400 to-yellow-300 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg orange_gradient sm:text-2xl text-center max-w-2xl;
+}
+
+.url_input {
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-black focus:outline-none focus:ring-0;
+}
+
+.submit_btn {
+  @apply hover:border-gray-700 hover:text-gray-700 absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 items-center justify-center rounded border border-gray-200 font-sans text-sm font-medium text-gray-400;
+}
+
+.link_card {
+  @apply p-3 flex justify-start items-center flex-row bg-white border border-gray-200 gap-3 rounded-lg cursor-pointer;
+}
+
+.copy_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+}
+
+.blue_gradient {
+  @apply font-black bg-gradient-to-r from-blue-700 to-cyan-400 bg-clip-text text-transparent;
+}
+
+.summary_box {
+  @apply rounded-xl border border-gray-200 bg-white/95 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+}
