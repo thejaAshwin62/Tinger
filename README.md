@@ -10,6 +10,8 @@
   <h3 align="center">Here you can shortlist your webpage document into crisp and clarity explanations</h3>
 </div>
 
+This is an API which extracts news/article body from a URL and uses GPT to summarize (and optionally translate) the article content. Useful for text mining purposes. Leverages powerful and flexible web scraping engine (ScrapeNinja.net) with high-quality rotating proxies under the hood.
+
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
