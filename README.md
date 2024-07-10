@@ -1,8 +1,19 @@
-# React + Vite
+<div align="center">
+  <br />
+ <a href="https://ibb.co/2n94dDZ"><img src="https://i.ibb.co/2n94dDZ/Capture2.png" alt="Capture2" border="0"></a>
+  <br />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <div>
+    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+  </div>
 
-Currently, two official plugins are available:
+  <h3 align="center">Here you can shortlist your webpage document into crisp and clarity explanations</h3>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- React.js
+- REST- API
+
+
